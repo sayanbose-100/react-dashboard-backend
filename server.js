@@ -10,7 +10,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://react-client-iota.vercel.app/", // Your React app URL
+    origin: "*", // Your React app URL
     methods: ["GET", "POST"]
   }
 });
